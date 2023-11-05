@@ -177,6 +177,10 @@ document.addEventListener("keydown", function (event) {
   }
 });
 
+document.addEventListener("touchstart", function (event) {
+  game.bird.flap();
+});
+
 // Create a new instance of the game and start it
 const game = new Game();
 game.start();
